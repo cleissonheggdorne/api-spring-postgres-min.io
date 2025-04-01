@@ -55,5 +55,12 @@ public class Pessoa {
     @OneToMany(mappedBy = "pessoa")
     private List<ServidorEfetivo> servidoresEfetivos = new ArrayList<>();
 
+    public Pessoa(String nome, LocalDate dataNascimento, String sexo, String mae, String pai) {
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.sexo = sexo;
+        this.mae = mae;
+        this.pai = pai;
+    }
 
 }
